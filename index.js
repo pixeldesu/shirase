@@ -5,7 +5,7 @@ const anitomy = require("anitomy-js");
 
 module.exports = class Shirase {
   static MEDIA_PLAYER_PROCESSES() {
-    return ["vlc.exe", "mpv.exe", "mpc-hc.exe", "mpc-hc64.exe"];
+    return ["vlc.exe", "mpv.exe", "mpc-hc.exe", "mpc-hc64.exe", "VLC", "mpv"];
   }
 
   static MEDIA_PLAYER_TITLES() {
