@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/pixeldesu/shirase/issues"
   },
-  "homepage": "https://github.com/pixeldesu/shirase#readme"
+  "homepage": "https://github.com/pixeldesu/shirase#readme",
+  "dependencies": {
+    "@arcsine/win-info": "^0.1.2",
+    "anitomy-js": "^3.0.1",
+    "lodash": "^4.17.11",
+    "systeminformation": "^4.0.9"
+  }
 }
