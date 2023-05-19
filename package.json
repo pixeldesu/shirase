@@ -4,7 +4,7 @@
   "description": "Get anime information from currently running media players",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup-node src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -23,9 +23,11 @@
   },
   "homepage": "https://github.com/pixeldesu/shirase#readme",
   "dependencies": {
-    "@arcsine/win-info": "^0.1.2",
-    "anitomy-js": "^3.0.1",
-    "lodash": "^4.17.11",
-    "systeminformation": "^4.0.9"
+    "@arcsine/win-info": "^0.2.13",
+    "anitomy-js": "^5.1.0",
+    "systeminformation": "^5.17.12"
+  },
+  "devDependencies": {
+    "tsup": "^6.7.0"
   }
 }
