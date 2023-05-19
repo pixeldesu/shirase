@@ -2,7 +2,7 @@
   "name": "shirase",
   "version": "1.0.0",
   "description": "Get anime information from currently running media players",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsup-node src/index.ts --dts"
   },
