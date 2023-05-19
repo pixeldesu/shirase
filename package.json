@@ -1,6 +1,6 @@
 {
   "name": "shirase",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Get anime information from currently running media players",
   "main": "dist/index.js",
   "scripts": {
