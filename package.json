@@ -4,7 +4,7 @@
   "description": "Get anime information from currently running media players",
   "main": "index.js",
   "scripts": {
-    "build": "tsup-node src/index.ts"
+    "build": "tsup-node src/index.ts --dts"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
     "systeminformation": "^5.17.12"
   },
   "devDependencies": {
-    "tsup": "^6.7.0"
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
   }
 }
