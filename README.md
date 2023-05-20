@@ -15,13 +15,13 @@ npm install shirase
 Using shirase is really easy!
 
 ```js
-const Shirase = require("shirase");
+import Shirase from 'shirase';
 const shi = new Shirase();
 
-shi
-  .getInformation()
-  .then(information => console.log(information))
-  .catch(err => console.log(err));
+(async () => {
+  const information = await shi.getInformation();
+  console.log(information);
+});
 ```
 
 `information` (or however you name the Promise return value) is an object containing various fields of information coming from [anitomy](https://github.com/skiptirengu/anitomy-js).
@@ -30,7 +30,7 @@ shi
 
 There are a lot of programs using a multitude of batch/shell/PowerShell scripts to get currently running anime, I wondered about there being a way to grab all of that information just inside NodeJS.
 
-Shirase will query for all running processes, then check for a whitelist of media player process names (found in `Shirase.MEDIA_PLAYER_PROCESSES()`) and filter these out.
+Shirase will query for all running processes, then check for a whitelist of media player process names (found in `Shirase.MEDIA_PLAYER_PROCESSES`) and filter these out.
 
 Out of the narrowed list of processes, Shirase will use the PID to query the system for window information of that specific process.
 
